@@ -1,60 +1,22 @@
 # Tennis data Analysis project
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+team members:
+- Hossein Faghihi
+- Amir Hossein Ranjbar
 
-we get some statistics information about tennis on 202405  from data
+## Data Description
 
-## Project Organization
+The data is from the [Tennis Database]. The data contains information about the players, their matches, and the matches they played in. The data was in the form of a zip file. The zip file contains 31 zipfiles that contains parquet files for each table in the database. Each parquet file contains the data for a single table for just one day.
 
-```
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for cookiecutter
-│                         and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── cookiecutter                <- Source code for use in this project.
-    │
-    ├── __init__.py    <- Makes cookiecutter a Python module
-    │
-    ├── data           <- Scripts to download or generate data
-    │   └── make_dataset.py
-    │
-    ├── features       <- Scripts to turn raw data into features for modeling
-    │   └── build_features.py
-    │
-    ├── models         <- Scripts to train models and then use trained models to make
-    │   │                 predictions
-    │   ├── predict_model.py
-    │   └── train_model.py
-    │
-    └── visualization  <- Scripts to create exploratory and results oriented visualizations
-        └── visualize.py
-```
+## Data Analysis
 
---------
+The data was analyzed using [Jupyter Notebooks]. The data was analyzed using the following steps:
 
+1. extract the data from the zip file
+2. load the data into a pandas dataframe
+3. clean the data
+4. make csv files for each table
+5. analyze the data
+6. visualize the data
+7. make a report
+8. make a presentation
